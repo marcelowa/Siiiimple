@@ -1,5 +1,5 @@
 /*------------------------------
-Siiiimple v1.2  
+Siiiimple v1.3  
 
 Website: siiiimple.eu.pn
 
@@ -8,23 +8,22 @@ Free to use under the GPL license.
 
 
 /*---------------------------------------
-Changes in v1.2: 
+Changes in v1.3: 
 
-1. Syntax for columns changed from col to
-loop, and the container syntax changed 
-from grid to span.
+1. The example grids have been re-added
+to index.html
 
-2. Index.html has almost no content so you
-can just start.
+2. The github files have been re-named
+to index.html, and simple.css
 
-3. The container's width was changed from
-1130px to 1080px.
+3. There is some unnecessary code at 
+the bottom of simple.css for the example
+grids. You may remove that code if you 
+wish
 
-4. The columns now only float left, and 
-have 10px of padding. 
-
-5. There is now only one media break point 
-set at 530px.
+4. In the head of index.html there is a 
+link to google font's open sans. I like
+it, but you can remove it if you wish
 ----------------------------------------*/
 
 
@@ -61,7 +60,7 @@ img {
     width:100%;
     min-width:260px;
     max-width:1080px;
-    margin: 0 auto; 
+    margin:0 auto; 
 }
 
 /*Clears Childern Elements*/
@@ -133,14 +132,15 @@ by the number following the syntax.
 
 .loop_9 {width: 11.1%;}
 
-.loop_10 {width: 10;}
+.loop_10 {width: 10%;}
 
 .loop_11 {width: 9.09%;}
 
-.loop_12 {width: 8.3%;}
+.loop_12 {width: 8.333%;}
 
 
-/*Break Point*/
+/*Break Point - You may want to edit,
+and possibly add more break points*/
 
 @media (max-width: 530px) {
     .loop-1,
@@ -174,4 +174,29 @@ by the number following the syntax.
     .loop_12 {
         width:100%;
     }
+}
+
+/*This code is for the example.html, and 
+is not needed for Siiiimple to work*/
+
+body {
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    color:#555;
+    font-size:50px;
+    margin:50px;
+}
+
+.block {
+    width:100%;
+    height:auto;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-radius:2px;
+    background-color:#3DA5E1;
 }
