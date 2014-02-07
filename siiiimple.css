@@ -26,6 +26,15 @@ link to google font's open sans. I like
 it, but you can remove it if you wish
 ----------------------------------------*/
 
+/*----------------------------------------
+Minor Fixes in v1.3
+
+1. Changed only breakpoint from 53px0 to 
+768px
+
+2. Changed max-width t0 1080px from 1030px
+----------------------------------------*/
+
 
 /*---------------------------------------
 Usage Notes:
@@ -59,7 +68,7 @@ img {
 .span {
     width:100%;
     min-width:260px;
-    max-width:1080px;
+    max-width:1030px;
     margin:0 auto; 
 }
 
@@ -142,7 +151,7 @@ by the number following the syntax.
 /*Break Point - You may want to edit,
 and possibly add more break points*/
 
-@media (max-width: 530px) {
+@media (max-width: 768px) {
     .loop-1,
     .loop-2,
     .loop-3,
@@ -159,7 +168,7 @@ and possibly add more break points*/
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 768px) {
     .loop_1,
     .loop_2,
     .loop_3,
