@@ -89,6 +89,11 @@ img {
   padding: 10px; 
 }
 
+.rtl [class*='loop'] {
+  float: right;
+  padding: 10px; 
+}
+
 /*The Grid*/
 
 .loop-1 {width: 9.1%;}
